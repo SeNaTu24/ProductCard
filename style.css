@@ -1,11 +1,25 @@
+html,
+body {
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+   color: #fff;
+}
+
+html {
+   max-width: 1500px;
+   margin: 0 auto;
+}
+
+* {
+   box-sizing: border-box;
+}
+
 body {
    background-color: #f2ebe3;
    margin: 0;
    padding: 0;
-   display: grid;
-   place-items: center;
-   height: 100vh;
-   width: 100vw;
+   font-size: 1rem;
 
 }
 
@@ -15,6 +29,7 @@ body {
    margin-top: 9rem;
    display: flex;
    flex-direction: row;
+   font-size: 1rem;
 }
 
 .imgbg {
@@ -24,7 +39,10 @@ body {
    background-size: cover;
    border-top-left-radius: 10px;
    border-bottom-left-radius: 10px;
+   overflow: hidden;
+
 }
+
 
 .card {
    width: 50%;
@@ -63,22 +81,26 @@ h1 {
    background-color: #3c8067;
    border-radius: 10px;
    text-align: center;
-   color: #ffffff;
+   color: #fff;
    width: 40%;
    margin-right: 15rem;
+}
+
+#head {
+   color: black;
+   width: 80%;
 }
 
 @media(max-width: 600px) {
    .container {
       flex-direction: column;
       width: 90%;
-      margin-top: 5rem;
+      margin-top: 2rem;
    }
 
    .imgbg {
       width: 100%;
-      background-image: url(./images/image-product-mobile.jpg);
-      background-repeat: no-repeat;
+      height: 20rem;
    }
 
    .card {
